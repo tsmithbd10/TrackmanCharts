@@ -1,0 +1,4 @@
+library(ggplot2)
+ggplot(data = (Insert File Name Here), aes(x = PitchNo, y = ExitSpeed)) + #initializes ggplot, specifies what data goes on x and y axises
+  geom_point(aes(color = TaggedPitchType)) + #places points on scatterplot with x and y values corresponding to those specified above, colored by the type of pitch
+  labs(title="Pitcher Name Pitch Type, Number versus Exit Velocity",x='Pitch Number',y='Exit Velo',color = "Type") #Labels the chart appropriately
